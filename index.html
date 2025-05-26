@@ -25,7 +25,7 @@
 
       if (code) {
         status.textContent = '로그인 완료. 로컬 서버로 이동 중...'
-        window.location.href = `localhost:8081/#/member/login?code=${encodeURIComponent(code)}`
+        window.location.href = `http://localhost:8081/#/member/login?code=${encodeURIComponent(code)}`
       } else {
         status.textContent = '로그인 코드가 없습니다.'
       }
